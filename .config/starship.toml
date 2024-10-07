@@ -1,0 +1,57 @@
+format = """
+$os\
+$python\
+$directory\
+$git_branch\
+$git_state\
+$battery\
+$character"""
+
+add_newline = false
+command_timeout = 1000
+scan_timeout = 1000
+
+[battery]
+format = "[$symbol $percentage]($style) "
+empty_symbol = "🪫"
+charging_symbol = "🔋"
+full_symbol = '🔋'
+
+[[battery.display]]
+threshold = 10
+style = 'red'
+
+
+[character]
+error_symbol = "[✗](bold #ff5555)"
+success_symbol = "[➜](bold #50fa7b)"
+
+[cmd_duration]
+style = "bold #f1fa8c"
+
+[directory]
+style = "bold #50fa7b"
+
+[git_branch]
+style = "bold #ff79c6"
+symbol = " "
+
+[git_status]
+style = "bold #ff5555"
+
+[os]
+format = "[$symbol]($style)"
+style = "bold #60bafe"
+disabled = false
+
+[os.symbols]
+Windows = " "
+Ubuntu = " "
+
+[package]
+disabled = true
+
+[python]
+format = 'via [${symbol}(${version} )(\($virtualenv\) )]($style)'
+symbol = " "
+style = "bold #f3e10b"
