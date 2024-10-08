@@ -1,3 +1,7 @@
+# Remember to add the following to your .bashrc:
+# eval "$(direnv hook bash)"
+# I had to use eval "$(/path/to/direnv hook bash)" to get it to work with WSL
+
 layout_uv() {
     if [[ -d ".venv" ]]; then
         VIRTUAL_ENV="$(pwd)/.venv"
