@@ -40,13 +40,15 @@ _uv-init type project:
     mkdir {{ name }}
     just bootstrap library {{ name }}
     cd {{ name }} && touch .envrc && echo "layout uv" >> .envrc && direnv allow
+    cp .gitignore {{ name }}/.gitignore
 
 # Create a new application. Useful for web apps, scripts, or CLIs.
 @new-app name=project-name:
     mkdir {{ name }}
     just bootstrap app {{ name }}
     cd {{ name }} && touch .envrc && echo "layout uv" >> .envrc && direnv allow
-
+    cp .gitignore {{ name }}/.gitignore
+    
 # Bootstrap a new project
 bootstrap type project:
     #!/bin/bash
