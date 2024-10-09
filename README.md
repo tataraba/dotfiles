@@ -19,7 +19,6 @@ I decided to invest a little time in making my coding environment a little more 
 - [uv](https://docs.astral.sh/uv/) - Python package manager
 
 
-
 ## Usage <a name = "usage"></a>
 
 Most of these can be placed in your home (`~/`) directory. However, the `.bashrc` file should only be appended to existing `.bashrc`, and the `gitignore` file should change to `.gitignore`.
