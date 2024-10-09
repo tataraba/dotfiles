@@ -1,3 +1,6 @@
+### Change filename to .gitignore and place in root directory of
+### your python projects.
+
 
 ### direnv ###
 .direnv
