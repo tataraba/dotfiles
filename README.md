@@ -9,6 +9,7 @@
 ## About <a name = "about"></a>
 
 I decided to invest a little time in making my coding environment a little more pleasant. These are some of my personal dotfiles.
+![My Terminal View](https://github.com/user-attachments/assets/c62d12dc-2349-4cf5-a464-4bda113032ec)
 
 ## Tools <a name = "tools"></a>
 
