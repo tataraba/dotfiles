@@ -1,3 +1,31 @@
 [user]
     name = Mario Munoz
-    email = pythonbyniht@gmail.com
+    email = pythonbynight@gmail.com
+
+[pull]
+	rebase = true
+
+[pretty]
+    slog = format:%C(yellow)%h 📅 %Cred%as ❇️ %Cblue%an%Cgreen%d %Creset%s
+    bw = format:%h | %as | %>(20,trunc)%d%x09%s
+
+[alias]
+    c = commit -m
+    cn = commit --no-verify -m
+    a = add
+    aa = !git add -u && git add . && git status
+    undo = reset HEAD~1 --mixed
+    s = status --short
+    st = status
+
+	# logs
+	last = log --name-status -1 HEAD --pretty=slog
+	l1 = log -1 --pretty=slog
+    l5 = log -5 --pretty=slog 
+    slog = log --pretty=slog
+    slogbw = log --pretty=bw
+    glog = log --graph --pretty=slog 
+    outgoing = log --pretty=slog @{u}..
+
+	# list my aliases
+	la = "!git config -l | grep alias | cut -c 7-"
