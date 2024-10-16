@@ -3,7 +3,7 @@
     email = pythonbynight@gmail.com
 
 [pull]
-	rebase = true
+    rebase = true
 
 [pretty]
     slog = format:%C(yellow)%h 📅 %Cred%as ❇️ %Cblue%an%Cgreen%d %Creset%s
@@ -18,14 +18,14 @@
     s = status --short
     st = status
 
-	# logs
-	last = log --name-status -1 HEAD --pretty=slog
-	l1 = log -1 --pretty=slog
+    # logs
+    last = log --name-status -1 HEAD --pretty=slog
+    l1 = log -1 --pretty=slog
     l5 = log -5 --pretty=slog 
     slog = log --pretty=slog
     slogbw = log --pretty=bw
     glog = log --graph --pretty=slog 
     outgoing = log --pretty=slog @{u}..
 
-	# list my aliases
-	la = "!git config -l | grep alias | cut -c 7-"
+    # list my aliases
+    la = "!git config -l | grep alias | cut -c 7-"
